@@ -1,0 +1,32 @@
+# Program to calculate two number with the help of python calculator.
+while(True):
+    resp1 = input("Would you like to use calculator?" "Enter Y for Yes and N for No : ")
+    if resp1 == 'Y':
+        num1 = eval(input("Enter first number : "))
+        num2 = eval(input("Enter second number : "))
+        print("1.Addition")
+        print("2.Subtration")
+        print("3.Multiplition")
+        print("4.Dividion")
+        print("5.Power")
+        choice = int(input("Enter your choice(1,2,3,4 or 5) : "))
+        if choice == 1:
+            result = num1+num2
+            print("Answer =", result)
+        elif choice == 2:
+            result = num1-num2
+            print("Answer =", result)
+        elif choice == 3:
+            result = num1*num2
+            print("Answer =", result)
+        elif choice == 4:
+            result = num1/num2
+            print("Answer =", result)
+        elif choice == 5:
+            result = num1**num2
+            print("Answer =", result)
+        else:
+            print("INVALID INPUT!!!!! TRY AGAIN")
+    if resp1 == 'N':
+        print("Thank You for using calculator")
+        break
