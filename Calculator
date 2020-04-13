@@ -30,3 +30,4 @@ while(True):
     if resp1 == 'N':
         print("Thank You for using calculator")
         break
+        print()
