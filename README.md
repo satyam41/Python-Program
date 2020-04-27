@@ -8,3 +8,9 @@ The Python name is come from one circus one day Guido van Rossum went to the cir
 
 
 You can see my Python video from YouTube to beter understand.
+I uplodade two video on the YouTube you can also see or take my code from there also I put the link below:
+
+Area and Perimeter of the circle : https://youtu.be/epaeT9yCqW4
+calculate square and cube : https://youtu.be/Bph-kd6DNlM
+
+Subscribers and press the bell icon to get notification of my vedio.
