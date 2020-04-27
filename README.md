@@ -1,5 +1,5 @@
 # Python-Program
-In this course we will learn some interested python programs.
+
 Python is a esay to code and very verstie in nature. 
 Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC language (itself inspired by SETL), capable of exception handling and interfacing with the Amoeba operating system. Its implementation began in December 1989.
 
