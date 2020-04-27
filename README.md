@@ -7,4 +7,4 @@ The Python name is come from one circus one day Guido van Rossum went to the cir
 
 
 
-#You can see my Python video from YouTube to beter understand.
+You can see my Python video from YouTube to beter understand.
