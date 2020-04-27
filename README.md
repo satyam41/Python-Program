@@ -14,4 +14,4 @@ Area and Perimeter of the circle : https://youtu.be/epaeT9yCqW4
 
 Calculate square and cube : https://youtu.be/Bph-kd6DNlM
 
-Subscribers and press the bell icon to get notification of my vedio.
+Subscribers and press the bell icon to get notification of my video.
