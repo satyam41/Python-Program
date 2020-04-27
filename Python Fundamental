@@ -1,0 +1,21 @@
+A program is a set of instructions that govern the processing.
+                    OR
+A program forms the base for processing.
+
+Python Character: Python Character is set of valid chatactes that a language can recognize. Python support Uncode encoding standard. 
+That means, Python has the following character set:
+    (i)Letters : A-Z, a-z
+    (ii)Digits : 0-9
+    (iii)Special symbols : space + -* / ** // == = "" '' : ; % ! & # <= >= < ,> . {} [] () @ _(underscore)
+    (iv)Whitespaces : Blank space, tabs, carriage return, newline, formfeed.
+    (v)Other character : Python can process all ASCII and unicode character as part of data or literals.
+    
+    Tokens: The smallest individual unit in a program is known as a token or lexical unit.
+    There are five types of tokens:
+                        (1) Keywords
+                        (2) Idntifiers
+                        (3) Literals 
+                        (4) Operators
+                        (5) Punctuators
+                       
+    
