@@ -1,0 +1,17 @@
+# search() function
+def SEARCH(x,item):
+    boolean = False
+    for i in x:
+        if (i==item):
+            boolean = True
+            break
+        else:
+            boolean = False
+    return boolean
+l = [1,2,4,5,6,7,8,9]
+a = eval(input("Enter any number : "))
+flag = SEARCH(l,a)
+if (flag):
+    print("Data Match")
+else:
+    print("No Data Match")
