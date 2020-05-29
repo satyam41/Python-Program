@@ -52,8 +52,12 @@ Checkbutton(root, text="Not agree Terms and Condition").grid(row=6, column=2)
 
 # Making Buttons.
 
-Button(root, text="Submit the dtails", command=value).grid(row=7, column=2)
-Button(root, text="Restart", command=reset).grid(row=8, column=2)
+widget = Button(root, text="Submit the dtails", command=value)
+widget.grid(row=7, column=2)
+widget = Button(root, text="Restart", command=reset)
+widget.grid(row=8, column=2)
+
+widget.bind("<Double-1>, quit")
 
 root.mainloop()
 
