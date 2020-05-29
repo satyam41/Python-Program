@@ -1,0 +1,18 @@
+from tkinter import *
+root = Tk()
+
+def change():
+	canvas_width = int(input("Enter width of GUI : "))
+	canvas_height = int(input("Enter height of GUI :"))
+	root.geometry(f"{canvas_width}x{canvas_height}")
+
+canvas_width = int(input("Enter width of GUI : "))
+canvs_height = int(input("Enter height of GUI : "))
+
+root.geometry(f"{canvas_width}x{canvs_height}")
+
+root.title("GUI")
+
+Button(root, text="Apply", command=change).pack()
+
+root.mainloop()
