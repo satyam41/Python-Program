@@ -11,9 +11,9 @@ def value():
 	msg = "Regester Successfully..."
 	tmsg.showinfo("Verification", msg)
 	with open("Cases", "a") as f1:
-		f1.write(f"{namevalue.get(), phonevalue.get()} \n")
-canvas_width = int(input("Enter width of GUI : "))
-canvs_height = int(input("Enter height of GUI : "))
+	f1.write(f"{namevalue.get(), phonevalue.get()} \n")
+	canvas_width = int(input("Enter width of GUI : "))
+	canvs_height = int(input("Enter height of GUI : "))
 
 root.geometry(f"{canvas_width}x{canvs_height}")
 
