@@ -22,4 +22,4 @@ def check_squre_cube(a,b):
         return True
     else:
         return False
-check_squre_cube(36,216)
+print(check_squre_cube(36,216))
