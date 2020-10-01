@@ -1,0 +1,68 @@
+from tkinter import *
+root = Tk()
+root.geometry("500x300")
+root.title("KV")
+
+def value():
+	data = (f"{namevalue.get(), contactvalue.get(), father_namevalue.get(), mother_namevalue.get(), terms.get()} \n")
+	print(data)
+# records are stored in file name "Details".
+	with open("Details", "a") as f1:
+		f1.write(data)
+
+def reset():
+	print("Your data is Restart")
+
+Label(root, text="Welcome to Kendriya Vidayala", font="comicsansms 15 bold").grid(row=0, column=2)
+
+# Making labels.
+
+name = Label(root, text="Name")
+contact = Label(root, text="Contact")
+fathe_name = Label(root, text="Father Name")
+mothr_name = Label(root, text="Mother Name")
+
+name.grid(row=1, column=1)
+contact.grid(row=2, column=1)
+fathe_name.grid(row=3, column=1)
+mothr_name.grid(row=4, column=1)
+
+namevalue = StringVar()
+contactvalue = StringVar()
+father_namevalue = StringVar()
+mother_namevalue = StringVar()
+terms = IntVar()
+
+# entry and packing the variables.
+
+name_entry = Entry(root, textvariable=namevalue)
+contact_entry = Entry(root, textvariable=contactvalue)
+fathe_name_entry = Entry(root, textvariable=father_namevalue)
+mother_name_entry = Entry(root, textvariable=mother_namevalue)
+
+name_entry.grid(row=1, column=2)
+contact_entry.grid(row=2, column=2)
+fathe_name_entry.grid(row=3, column=2)
+mother_name_entry.grid(row=4, column=2)
+
+# Check Buttons.
+
+Checkbutton(root, text="Agree Terms and Conditon").grid(row=5, column=2)
+Checkbutton(root, text="Not agree Terms and Condition").grid(row=6, column=2)
+
+# Making Buttons.
+
+widget = Button(root, text="Submit the dtails", command=value)
+widget.grid(row=7, column=2)
+widget = Button(root, text="Restart", command=reset)
+widget.grid(row=8, column=2)
+
+widget.bind("<Double-1>, quit")
+
+root.mainloop()
+
+# File.
+
+with open("Details") as f1:
+	data = f1.read()
+	print(data)

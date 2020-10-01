@@ -1,0 +1,49 @@
+from tkinter import *
+import tkinter.messagebox as tmsg
+root = Tk()
+
+def change():
+	canvas_width = int(input("Enter width of GUI : "))
+	canvas_height = int(input("Enter height of GUI :"))
+	root.geometry(f"{canvas_width}x{canvas_height}")
+
+def value():
+	msg = "Regester Successfully..."
+	tmsg.showinfo("Verification", msg)
+	with open("Cases", "a") as f1:
+	f1.write(f"{namevalue.get(), phonevalue.get()} \n")
+	canvas_width = int(input("Enter width of GUI : "))
+	canvs_height = int(input("Enter height of GUI : "))
+
+root.geometry(f"{canvas_width}x{canvs_height}")
+
+root.title("GUI")
+
+Label(root, text="Welcome to Quarintine Center", font="comicsansms 20 bold").grid(row=0, column=1)
+name = Label(root, text="Name : ")
+phone = Label(root, text="Phone number : ")
+name.grid()
+phone.grid()
+
+namevalue = StringVar()
+phonevalue = StringVar()
+day_7 = IntVar()
+day_14 = IntVar()
+
+name_entry = Entry(root, textvariable=namevalue)
+phone_entry = Entry(root, textvariable=phonevalue)
+
+name_entry.grid(row=1, column=1)
+phone_entry.grid(row=2, column=1)
+
+Checkbutton(root, text="7-days of quarintine").grid(row=3, column=1)
+Checkbutton(root, text="14-days of quartine").grid(row=4, column=1)
+
+Button(root, text="Change the size of GUI", command=change).grid(row=5, column=1)
+Button(root, text="Submit", command=value).grid(row=6, column=1)
+
+widget = Button(root, text="Double click to close")
+widget.grid(row=7, column=1)
+widget.bind("<Double-1>", quit)
+
+root.mainloop()

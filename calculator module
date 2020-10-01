@@ -1,0 +1,16 @@
+# function of calculator
+
+def ADD(x,y):
+    return x+y
+def SUB(x,y):
+    return x-y
+def MULT(x,y):
+    return x*y
+def DIV(x,y):
+    return x/y
+def POW(x,y):
+    return x**y
+def FLOW(x,y):
+    return x//y
+def REMD(x,y):
+    return x%y
